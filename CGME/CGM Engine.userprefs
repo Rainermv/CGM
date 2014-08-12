@@ -1,0 +1,45 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GameBuilder.cs">
+    <Files>
+      <File FileName="Resource.cs" Line="48" Column="2" />
+      <File FileName="Actor.cs" Line="1" Column="1" />
+      <File FileName="GameBuilder.cs" Line="48" Column="39" />
+      <File FileName="GameManager.cs" Line="1" Column="1" />
+      <File FileName="Deprecated\Factory.cs" Line="1" Column="1" />
+      <File FileName="Game.cs" Line="1" Column="1" />
+      <File FileName="Player.cs" Line="1" Column="1" />
+      <File FileName="Deck.cs" Line="1" Column="1" />
+      <File FileName="Card.cs" Line="1" Column="1" />
+      <File FileName="AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="c:\Rainer\JEDI\Projeto Final\Joker\JokerPlus\JokerPlus\CGMEditor\MyClass.cs" Line="1" Column="1" />
+      <File FileName="..\..\Paciencia\Assets\Teste.cs" Line="1" Column="1" />
+      <File FileName="c:\Rainer\JEDI\Projeto Final\Joker\JokerPlus\JokerPlus\Ruleset\Phase.cs" Line="31" Column="21" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True" />
+          <Node name="CGM Engine" expanded="True">
+            <Node name="Deprecated" expanded="True" />
+            <Node name="Ruleset" expanded="True" />
+            <Node name="GameBuilder.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True">
+          <Node name="CGM Editor" expanded="True" />
+          <Node name="CGM Engine" expanded="True">
+            <Node name="CGME" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <AuthorInfo Name="Rainer Vieira" Email="rainermv@gmail.com" Copyright="Rainer Vieira" Company="" Trademark="" />
+</Properties>

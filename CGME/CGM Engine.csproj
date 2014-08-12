@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02B72D50-DE31-4404-888E-8D29F21553DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CGME</RootNamespace>
+    <AssemblyName>CGM Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\TestProject\Assets</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="Execute" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\TestProject\Assets</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine">
+      <HintPath>UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Deprecated\Factory.cs" />
+    <Compile Include="Player\Card.cs" />
+    <Compile Include="Player\Deck.cs" />
+    <Compile Include="Player\Player.cs" />
+    <Compile Include="Game\Game.cs" />
+    <Compile Include="Game\GameBuilder.cs" />
+    <Compile Include="Game\GameManager.cs" />
+    <Compile Include="Actor\Resource.cs" />
+    <Compile Include="Actor\Actor.cs" />
+    <Compile Include="Action\Action.cs" />
+    <Compile Include="Deprecated\Ruleset.cs" />
+    <Compile Include="Action\ActionGroup.cs" />
+    <Compile Include="Action\ActionCondition.cs" />
+    <Compile Include="Ruleset\Phase.cs" />
+    <Compile Include="Action\ActionSingleEffect.cs" />
+    <Compile Include="Action\SingleEffect\ActionEndGame.cs" />
+    <Compile Include="Action\SingleEffect\ActionEndPhase.cs" />
+    <Compile Include="Action\SingleEffect\ActionTransferCard.cs" />
+    <Compile Include="Action\SingleEffect\ActionAttack.cs" />
+    <Compile Include="Action\Condition\ActionConditionWaitForInput.cs" />
+    <Compile Include="Action\Condition\ActionConditionTargetable.cs" />
+    <Compile Include="Action\Targetable\ActionTargetable.cs" />
+    <Compile Include="Action\Targetable\AlterResourceNumber.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="CGM Engine.userprefs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Deprecated\" />
+    <Folder Include="Ruleset\" />
+    <Folder Include="Player\" />
+    <Folder Include="Game\" />
+    <Folder Include="Actor\" />
+    <Folder Include="Action\SingleEffect\" />
+    <Folder Include="Action\Condition\" />
+    <Folder Include="Action\Targetable\" />
+  </ItemGroup>
+</Project>
